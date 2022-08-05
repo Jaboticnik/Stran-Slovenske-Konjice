@@ -1,0 +1,169 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #A8DADC;
+}
+
+:root {
+    /* Velikost pisave */
+    --vp-900: clamp(4.5rem, 7.5vw + 1rem, 9.375rem);
+    --vp-800: 3.5rem;
+    --vp-750: 3.5rem;
+    --vp-700: 1.5rem;
+    --vp-650: 1.4rem;
+    --vp-600: 1rem;
+    --vp-500: 1rem;
+    --vp-400: 1.1rem;
+    --vp-300: 1rem;
+    --vp-200: 0.875rem;
+}
+
+@media (min-width: 35em) {
+    :root {
+        /* Velikost pisave */
+        --vp-800: 5rem;
+        --vp-750: 5rem;
+        --vp-700: 2.5rem;
+        --vp-650: 1.6rem;
+        --vp-600: 1.5rem;
+        --vp-500: 1.25rem;
+        --vp-400: 1.3rem;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        /* Velikost pisave */
+        --vp-800: 6.25rem;
+        --vp-750: 5.3rem;
+        --vp-700: 3.5rem;
+        --vp-650: 2rem;
+        --vp-600: 2rem;
+        --vp-500: 1.75rem;
+        --vp-400: 1.4rem;
+    }
+}
+
+
+.Glava {
+    background-image: url("./slike/Konjicegric.jpg") ;
+    padding: 6vw;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.Glava > * {
+    margin: .4rem auto;
+    border-radius: .5rem;
+}
+.Glava > h1 {
+    padding: .5rem 1.2rem;
+    background: #1D3557;
+    font-size: var(--vp-650);
+}
+
+.Glava > p {
+    padding: .4rem 0;
+    background: #457B9D;
+    font-size: var(--vp-400);
+    max-width: 40ch;
+}
+
+.sredinskopodrocje {
+    margin: 0;
+    background: #F1FAEE;
+    padding: 2rem;
+    color: black;
+}
+
+.sredinskopodrocje > h1 {
+    font-size: var(--vp-650);
+    text-align: center;
+    color: #1D3557;
+    margin: 0 0 2rem;
+}
+.nosilecstvari {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    column-gap: 1rem;
+}
+
+.odstavek > img {
+    width: clamp(6rem, 20vw, 13rem);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+@media (max-width: 40em) {
+    .nosilecstvari {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        row-gap: 1rem;
+    }
+    .odstavek > img {
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        width: clamp(6rem, 40vw, 50rem);
+    }
+}
+
+
+.odstavek > h3 {
+
+}
+
+.odstavek > p {
+    max-width: 30ch;
+}
+
+
+
+
+.nosilecopisa {
+    display: flex;
+    padding: 2rem 0;
+    align-items: start;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.nosilecopisa > img {
+    height: clamp(15rem, 20vw, 30rem);
+    align-self: center;
+    border-radius: 1rem;
+}
+
+.opismesta {
+    max-width: 30rem;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.opismesta > h3 {
+    color: #1D3557;
+    font-size: var(--vp-600);
+}
+
+.opismesta > p {
+    font-size: var(--vp-300);
+}
+
+@media (max-width: 60em) {
+    .nosilecopisa {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .opismesta > h3 {
+    text-align: center;
+   }
+}
